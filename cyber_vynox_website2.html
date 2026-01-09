@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Vynox | خدمات رقمية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#0f172a;
+      --secondary:#0ea5e9;
+      --accent:#22c55e;
+      --bg:#020617;
+      --card:#020617ee;
+      --text:#e5e7eb;
+      --muted:#94a3b8;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Cairo',sans-serif;
+      background:linear-gradient(180deg,#020617,#020617 40%,#020617cc),url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f') center/cover fixed;
+      color:var(--text);
+      line-height:1.8;
+    }
+    header{
+      min-height:85vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px 20px;
+    }
+    header .wrap{
+      max-width:900px;
+      background:rgba(2,6,23,.75);
+      border:1px solid #0ea5e933;
+      border-radius:20px;
+      padding:50px 30px;
+      backdrop-filter:blur(6px);
+    }
+    header h1{
+      font-size:3rem;
+      margin-bottom:10px;
+      color:#e5f6ff;
+    }
+    header p{color:var(--muted);font-size:1.1rem}
+    .cta{
+      margin-top:25px;
+      display:flex;
+      gap:12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+    .btn{
+      padding:12px 22px;
+      border-radius:999px;
+      border:1px solid transparent;
+      cursor:pointer;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .btn.primary{background:var(--secondary);color:#020617}
+    .btn.ghost{border-color:#38bdf8;color:#38bdf8}
+
+    section{padding:80px 20px}
+    .container{max-width:1200px;margin:auto}
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+    .title h2{font-size:2.2rem}
+    .title p{color:var(--muted)}
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:22px;
+    }
+    .card{
+      background:rgba(2,6,23,.85);
+      border:1px solid #1e293b;
+      border-radius:18px;
+      padding:25px;
+      transition:.3s;
+    }
+    .card:hover{transform:translateY(-6px);border-color:#38bdf8}
+    .card h3{margin-bottom:8px}
+    .card p{color:var(--muted);font-size:.95rem}
+
+    .prices table{
+      width:100%;
+      border-collapse:collapse;
+      background:rgba(2,6,23,.85);
+      border-radius:16px;
+      overflow:hidden;
+    }
+    .prices th,.prices td{
+      padding:14px;
+      border-bottom:1px solid #1e293b;
+      text-align:center;
+    }
+    .prices th{background:#020617;color:#38bdf8}
+
+    .map iframe{
+      width:100%;
+      height:380px;
+      border-radius:16px;
+      border:0;
+    }
+
+    footer{
+      background:#020617;
+      text-align:center;
+      padding:30px 20px;
+      color:var(--muted);
+    }
+
+    /* WhatsApp Floating */
+    .whatsapp{
+      position:fixed;
+      bottom:20px;
+      left:20px;
+      background:#25d366;
+      color:white;
+      width:60px;height:60px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:30px;
+      text-decoration:none;
+      box-shadow:0 10px 25px rgba(0,0,0,.4);
+      z-index:1000;
+    }
+
+    @media(max-width:600px){header h1{font-size:2.2rem}}
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <img src="logo.png" alt="Cyber Vynox Logo" class="logo">
+  <h1>Cyber Vynox</h1>
+  <p>خدمات رقمية – طباعة – إنترنت</p>
+</header>
+
+<section id="services">
+  <div class="container">
+    <div class="title">
+      <h2>خدماتنا</h2>
+      <p>حلول رقمية وإدارية متكاملة</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>💻 خدمات رقمية</h3><p>طباعة، نسخ، سكانر، إنشاء حسابات، إيميل.</p></div>
+      <div class="card"><h3>📄 خدمات إدارية</h3><p>تعبئة استمارات، ملفات، سيرة ذاتية، طلبات.</p></div>
+      <div class="card"><h3>🌐 إنترنت</h3><p>تصفح، تحميل، إرسال ملفات.</p></div>
+      <div class="card"><h3>🖨️ طباعة احترافية</h3><p>أسود/ألوان بجودة عالية.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="prices">
+  <div class="container">
+    <div class="title">
+      <h2>💰 أسعار اقتصادية</h2>
+      <p>أفضل الأسعار مع جودة مضمونة</p>
+    </div>
+    <table>
+      <tr>
+        <th>الخدمة</th>
+        <th>السعر</th>
+      </tr>
+      <tr>
+        <td>🖨️ الطباعة (أبيض وأسود)</td>
+        <td>من 10 دج</td>
+      </tr>
+      <tr>
+        <td>📄 سيرة ذاتية (CV)</td>
+        <td>250 دج</td>
+      </tr>
+      <tr>
+        <td>📝 تعبئة استمارة</td>
+        <td>200 دج</td>
+      </tr>
+      <tr>
+        <td>🏢 خدمات إدارية</td>
+        <td>ابتداءً من 150 دج</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section class="map">
+  <div class="container">
+    <div class="title"><h2>موقعنا</h2><p>تشرفنا بزيارتكم</p></div>
+    <iframe src="https://www.google.com/maps?q=Algeria&output=embed"></iframe>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Cyber Vynox – جميع الحقوق محفوظة</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/213782459741?text=مرحبا،%20أريد%20الاستفسار%20عن%20خدمة" target="_blank">💬</a>
+
+</body>
+</html>
